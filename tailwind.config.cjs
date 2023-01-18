@@ -6,6 +6,9 @@ module.exports = {
       boxShadow: {
         base: "0px 5px 10px rgba(0, 0, 0, 0.05)",
       },
+      gridTemplateColumns: {
+        "custom-2": "80% 20%",
+      },
       colors: {
         brown: "#2F241F",
         "soft-brown": "#817253",

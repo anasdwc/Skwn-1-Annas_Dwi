@@ -9,14 +9,14 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="relative grid grid-cols-2 items-center justify-between gap-y-4 p-4 shadow-base">
+    <nav className="relative grid grid-cols-2 items-center justify-between gap-y-4 p-4 shadow-base md:flex">
       <div className="brand flex items-center gap-2">
         <img src="./images/logo.svg" alt="Dekoor Logo" />
         <h1 className="font-bold text-brown">Dekoor</h1>
       </div>
       <div
         className={clsx(
-          "nav-list inset-0 top-16 col-span-full row-span-2 row-start-2 row-end-3 flex flex-col items-center gap-y-2 text-sm transition-transform duration-500",
+          "nav-list inset-0 top-16 col-span-full row-span-2 row-start-2 row-end-3 flex flex-col items-center gap-y-2 text-sm transition-transform duration-500 md:flex md:flex-row md:justify-self-end",
           isCollapsed && "hidden"
         )}
       >

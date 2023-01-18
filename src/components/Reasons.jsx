@@ -34,12 +34,12 @@ function List({ iconList, text }) {
 
 export default function Reasons() {
   return (
-    <section className="bg-very-black-brown px-6 py-8 text-center text-light-green">
-      <h3 className="text-lg">WHY CHOOSE US?</h3>
-      <h4 className="upper pt-6 pb-8 text-2xl font-extrabold leading-10">
+    <section className="bg-very-black-brown px-6 py-8 text-center text-light-green md:px-32 md:py-24 md:text-left">
+      <h3 className="text-lg md:text-xl">WHY CHOOSE US?</h3>
+      <h4 className="upper pt-6 pb-8 text-2xl font-extrabold leading-10 md:mb-4 md:text-7xl">
         We care about details and the quality of our products
       </h4>
-      <div className="lists">
+      <div className="lists md:flex md:justify-between">
         {dataLists.map((item, index) => (
           <List key={index} {...item} />
         ))}
