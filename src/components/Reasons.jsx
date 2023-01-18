@@ -35,13 +35,13 @@ function List({ iconList, text }) {
 export default function Reasons() {
   return (
     <section className="bg-very-black-brown px-6 py-8 text-center text-light-green">
-      <h2 className="text-lg">WHY CHOOSE US?</h2>
-      <h3 className="upper pt-6 pb-8 text-2xl font-extrabold leading-10">
+      <h3 className="text-lg">WHY CHOOSE US?</h3>
+      <h4 className="upper pt-6 pb-8 text-2xl font-extrabold leading-10">
         We care about details and the quality of our products
-      </h3>
+      </h4>
       <div className="lists">
-        {dataLists.map((item) => (
-          <List {...item} />
+        {dataLists.map((item, index) => (
+          <List key={index} {...item} />
         ))}
       </div>
     </section>

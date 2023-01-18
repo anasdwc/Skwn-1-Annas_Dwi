@@ -50,7 +50,7 @@ export default function Hero() {
           <h4 className="my-4 text-3xl leading-8 text-white">Pösht Sofa</h4>
           <Button
             iconPosition="right"
-            extendClass="text-white text-sm px-2 w-2/4 justify-evenly mt-2"
+            extendClass="!text-white text-sm px-2 w-2/4 justify-evenly mt-2"
             bg="bg-brown"
             text="View Details"
             buttonIcon="./images/icon-arrow.svg"
