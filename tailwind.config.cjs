@@ -14,6 +14,7 @@ module.exports = {
         "light-green": "#E5F0B6",
         "light-green-500": "rgba(229, 240, 182, 0.5)",
         "transparent-white": "rgba(255, 255, 255, 0.5)",
+        "soft-white": "#FCFAFA",
       },
       fontSize: {
         "3xl": "32px",
