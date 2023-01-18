@@ -1,15 +1,17 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import Carousel from "./Carousel";
 import CarouselItem from "./CarouselItem";
 
 export default function Products() {
-  const totalChild = document.querySelectorAll(
-    ".caraousel-content-item"
-  ).length;
+  const totalChild = document.querySelectorAll(".caraousel-content-item");
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [length, setLength] = useState(totalChild);
+
+  useEffect(() => {
+    setLength(totalChild.length);
+  }, [length]);
 
   const next = () => {
     if (currentIndex < length - 1) {
@@ -22,7 +24,6 @@ export default function Products() {
     if (currentIndex > 0) {
       setCurrentIndex((prevState) => prevState - 1);
     }
-    console.log(currentIndex);
   };
 
   return (

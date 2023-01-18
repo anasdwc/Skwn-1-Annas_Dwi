@@ -11,7 +11,7 @@ export default function Carousel({ children, next, prev, currentIndex }) {
       </button>
       <div
         className={clsx(
-          "carousel-content flex gap-x-4 transition-transform duration-500"
+          "carousel-content flex h-64 gap-x-4 transition-transform duration-500"
         )}
         style={{
           transform: `translateX(-${currentIndex * 50}%)`,
