@@ -16,6 +16,9 @@ module.exports = {
         "transparent-white": "rgba(255, 255, 255, 0.5)",
         "soft-white": "#FCFAFA",
       },
+      fontFamily: {
+        jakarta: "Plus Jakarta Sans",
+      },
       fontSize: {
         "3xl": "32px",
       },

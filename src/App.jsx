@@ -1,5 +1,6 @@
 import "./App.css";
 import Categories from "./components/Categories";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Newsletter from "./components/Newsletter";
 import Partners from "./components/Partners";
@@ -17,6 +18,7 @@ function App() {
         <Products />
         <Newsletter />
       </main>
+      <Footer />
     </>
   );
 }
