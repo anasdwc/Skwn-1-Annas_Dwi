@@ -7,8 +7,8 @@
 
 ## How to start
 
-`npm run start` => development
-`npm run build` => production
+- `npm run start` => development
+- `npm run build` => production
 
 ## References
 
