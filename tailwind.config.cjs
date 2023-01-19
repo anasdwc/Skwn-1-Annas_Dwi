@@ -3,6 +3,10 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      translate: {
+        "1/2": "50%",
+        "1/10": "10%",
+      },
       boxShadow: {
         base: "0px 5px 10px rgba(0, 0, 0, 0.05)",
       },

@@ -27,16 +27,16 @@ export default function Products() {
   };
 
   return (
-    <section className="bg-very-black-brown py-8  text-light-green">
-      <div className="mb-6 flex items-center justify-between px-4">
-        <div className="text-sm ">
-          <h3>Categories</h3>
-          <h4 className="mt-2 text-base font-extrabold">
+    <section className="bg-very-black-brown py-8 text-light-green md:py-20">
+      <div className="mb-6 flex items-center justify-between px-4 md:mb-16 md:px-36">
+        <div className="text-sm">
+          <h3 className="text-2xl uppercase">Our Products</h3>
+          <h4 className="mt-2 text-base font-extrabold md:mt-4 md:text-5xl">
             This month's best seller
           </h4>
         </div>
         <div>
-          <button className="rounded-xl bg-light-green px-4 py-3 text-sm text-very-black-brown">
+          <button className="rounded-xl bg-light-green px-4 py-3 text-sm text-very-black-brown md:px-8 md:py-4">
             SEE MORE
           </button>
         </div>
@@ -62,6 +62,24 @@ export default function Products() {
         />
         <CarouselItem
           index={3}
+          currentIndex={currentIndex}
+          price={329}
+          productName="Und Chair"
+        />
+        <CarouselItem
+          index={4}
+          currentIndex={currentIndex}
+          price={329}
+          productName="Und Chair"
+        />
+        <CarouselItem
+          index={5}
+          currentIndex={currentIndex}
+          price={329}
+          productName="Und Chair"
+        />
+        <CarouselItem
+          index={6}
           currentIndex={currentIndex}
           price={329}
           productName="Und Chair"

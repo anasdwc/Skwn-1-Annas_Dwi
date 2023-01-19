@@ -10,10 +10,14 @@ export default function Partners() {
         </h3>
       </div>
       <div className="mt-6 flex justify-around md:mt-0 md:w-3/4 md:items-center md:justify-between md:gap-12">
-        <img src="/images/gusto.png" alt="Gusto" />
-        <img src="/images/stripe.png" alt="Stripe" />
-        <img src="/images/treehouse.png" alt="Treehouse" />
-        <img src="/images/upwork.png" alt="Upwork" />
+        <img className="w-16 md:w-32" src="/images/gusto.png" alt="Gusto" />
+        <img className="w-16 md:w-32" src="/images/stripe.png" alt="Stripe" />
+        <img
+          className="w-16 md:w-32"
+          src="/images/treehouse.png"
+          alt="Treehouse"
+        />
+        <img className="w-16 md:w-32" src="/images/upwork.png" alt="Upwork" />
       </div>
     </section>
   );

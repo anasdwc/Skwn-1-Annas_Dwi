@@ -9,7 +9,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="relative grid grid-cols-2 items-center justify-between gap-y-4 p-4 shadow-base md:flex">
+    <nav className="relative grid grid-cols-2 items-center justify-between gap-y-4 p-4 shadow-base md:flex md:px-32">
       <div className="brand flex items-center gap-2">
         <img src="./images/logo.svg" alt="Dekoor Logo" />
         <h1 className="font-bold text-brown">Dekoor</h1>
@@ -20,7 +20,7 @@ export default function Navbar() {
           isCollapsed && "hidden"
         )}
       >
-        <ul className="flex gap-4">
+        <ul className="flex gap-4 md:gap-8">
           <li>
             <a href="#">About Us</a>
           </li>
@@ -34,6 +34,13 @@ export default function Navbar() {
             <a href="#">Contact</a>
           </li>
         </ul>
+      </div>
+      <div
+        className={clsx(
+          "nav-list col-span-full row-span-2 row-start-3 row-end-4 flex flex-col items-center gap-y-2 text-sm transition-transform duration-500 md:flex md:flex-row md:justify-self-end",
+          isCollapsed && "hidden"
+        )}
+      >
         <ul className="flex items-center gap-4">
           <li>
             <a
